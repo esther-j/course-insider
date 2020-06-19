@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import SearchBar from '../components/SearchBar';
 import './homepage.css';
 
 export default class HomePage extends React.Component {
