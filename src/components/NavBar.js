@@ -15,7 +15,7 @@ export default class NavBar extends React.Component {
             >
                 <div 
                     style={{
-                        margin: '0 0.8em'
+                        margin: '0 1em'
                     }}
                 >
                     <img src={require("../assets/logo.svg")} />

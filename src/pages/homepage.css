@@ -14,7 +14,7 @@
 }
 
 #text-block {
-    padding-right: 10%;
+    padding: 5% 10%;
     width: 25em;
 }
 
@@ -38,4 +38,45 @@
     height: auto;
     max-width: 100%;
     word-break: break-word;
+}
+
+#searchbar-container {
+    word-break: break-word;
+    display: flex;
+    height: 3em;
+    width: 20em;
+}
+
+#searchbar-container input {
+    border-radius: 0.5em;
+    border: 0.08em solid rgba(0, 0, 0, 0.6);
+    flex-grow: 2;
+    font-size: 1em;
+    margin-right: 0.5em;
+    outline: none;
+    padding: 0.5em;
+}
+
+#searchbar-container input:focus {
+    border-color: rgba(77, 82, 191, 0.8);
+    box-shadow: 0 0 0.5em 0 rgba(77, 82, 191, 0.8);
+}
+
+#searchbar-container button {
+    background: rgba(77, 82, 191, 0.6);   
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 1.5em;
+}
+
+#searchbar-container button:focus {
+    outline: none;
+}
+
+#searchbar-container button:hover {
+    opacity: 30%;
+    cursor: pointer;
 }
