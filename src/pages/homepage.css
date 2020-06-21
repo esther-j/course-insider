@@ -14,7 +14,8 @@
 }
 
 #text-block {
-    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 5% 10%;
     width: 25em;
 }
 
@@ -42,15 +43,16 @@
 
 #searchbar-container {
     word-break: break-word;
-    display: flex;
-    height: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 2.5em;
     width: 20em;
 }
 
 #searchbar-container input {
     border-radius: 0.5em;
     border: 0.08em solid rgba(0, 0, 0, 0.6);
-    flex-grow: 2;
+    box-sizing: border-box;
     font-size: 1em;
     margin-right: 0.5em;
     outline: none;
@@ -62,21 +64,27 @@
     box-shadow: 0 0 0.5em 0 rgba(77, 82, 191, 0.8);
 }
 
-#searchbar-container button {
+#submit-button {
     background: rgba(77, 82, 191, 0.6);   
     border: none;
     border-radius: 0.5em;
+    box-sizing: border-box;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
-    padding: 0 1.5em;
+    line-height: 2.5em;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    word-break: break-word;
 }
 
-#searchbar-container button:focus {
+
+#submit-button:focus {
     outline: none;
 }
 
-#searchbar-container button:hover {
+#submit-button:hover {
     opacity: 30%;
     cursor: pointer;
 }
