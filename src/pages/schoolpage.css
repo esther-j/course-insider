@@ -1,0 +1,22 @@
+#banner {
+    width: 100%;
+    background: #C8CBFD;
+}
+
+#school-name {
+    margin: 0 !important;
+    padding: 1.5em 20%;
+}
+
+#dept-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 20%;
+    background: white;
+    border-radius: 2em;
+}
+
+.dept {
+    padding: 1em;
+    border: 1px solid grey;
+}

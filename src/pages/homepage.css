@@ -15,7 +15,7 @@
 
 #text-block {
     box-sizing: border-box;
-    margin: 5% 10%;
+    margin: 5%;
     width: 25em;
 }
 
@@ -42,16 +42,16 @@
 }
 
 #searchbar-container {
-    word-break: break-word;
     display: grid;
     grid-template-columns: auto auto;
     height: 2.5em;
     width: 20em;
+    word-break: break-word;
 }
 
 #searchbar-container input {
-    border-radius: 0.5em;
     border: 0.08em solid rgba(0, 0, 0, 0.6);
+    border-radius: 0.5em;
     box-sizing: border-box;
     font-size: 1em;
     margin-right: 0.5em;
