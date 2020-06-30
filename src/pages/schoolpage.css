@@ -17,6 +17,12 @@
 }
 
 .dept {
+    background: white;
     padding: 1em;
     border: 1px solid grey;
+}
+
+.dept:hover {
+    background: #C4C4C4;
+    cursor: pointer;
 }

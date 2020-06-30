@@ -1,3 +1,7 @@
+html, body {
+    background-color: white !important;
+}
+
 #main-container {
     align-items: center;
     display: block;

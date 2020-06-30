@@ -11,9 +11,10 @@ ReactDOM.render((
     <Router history={browserHistory}>
         <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route path="/school" component={SchoolPage} />
+            <Route path="/school/:schoolname" component={SchoolPage}>
+                <Route path="/department"/>
+            </Route>
         </Switch>
     </Router>),
-    // <HomePage />, 
     document.getElementById('root')
 );

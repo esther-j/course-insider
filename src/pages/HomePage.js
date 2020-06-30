@@ -1,10 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import SchoolPage from "./SchoolPage";
 import "./homepage.css";
 
 export default class HomePage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      schoolname: ""
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(event) {
+    const schoolname = event.target.value;
+    this.setState({ schoolname: schoolname });
+  }
+
   render() {
     return (
       <>
@@ -17,8 +29,16 @@ export default class HomePage extends React.Component {
               <h1>Discover and share course advice</h1>
               <p>Make schedule planning simple!</p>
               <div id="searchbar-container">
-                <input type="text" placeholder="Find your school..." />
-                <Link id="submit-button" class="no-text-deco" to="/school">
+                <input 
+                  name="schoolname"
+                  type="text" 
+                  placeholder="Find your school..."
+                  onChange={this.handleInputChange} />
+                <Link 
+                  id="submit-button" 
+                  className="no-text-deco" 
+                  to={`school/${this.state.schoolname}`}
+                >
                   Go
                 </Link>
               </div>
